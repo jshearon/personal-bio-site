@@ -1,12 +1,78 @@
-svg {
-  display: block;
-  height: 50px;
-  margin: 50px auto;
-  fill:#3BA9EE;
+body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  height: 100%;
+  min-height: auto;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #5D5C61;
+  color: white;
 }
 
-img {
-  max-width: 200px;
+h1, h4 {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  width: 45%;
+  padding: 1em;
+  min-height: 10em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+nav h1 {
+  width: 70%;
+  text-align: center;
+}
+
+nav h4 {
+  width: 70%;
+  text-align: center;
+}
+
+nav ul {
+  width: 70%;
+  text-align: left;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav li {
+  padding: 0;
+  margin: 1.5em 1.2em;
+  cursor: pointer;
+}
+
+nav img {
+  border-radius: 50%;
+  margin: 1em;
+  border: .5em solid #B1A296;
+}
+
+#mainContent {
+  width: 45%;
+  padding: 1em;
+}
+
+footer {
+  width: 100%;
+  padding: 1em;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: flex-end;
+}
+
+svg {
+  display: block;
+  height: 35px;
+  margin: 35px auto;
+  fill:#B1A296;
 }
 
 #bioPage {
@@ -19,4 +85,37 @@ img {
 
 #projectsPage {
   display: none;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.pageTitle {
+  width: 100%;
+}
+
+.project {
+  width: 40%;
+  margin: 1em;
+  padding: 1em;
+  text-align: center;
+  background-color: #7395AE;
+  border-radius: .5em;
+  color: white;
+}
+
+.project img {
+  width: 100%;
+  margin: auto;
+  border-radius: .5em;
+  border: 1px solid #B1A296;
+  overflow: hidden;
+}
+
+.project p {
+  text-align: left;
+}
+
+.project a {
+  text-decoration: none;
+  color: #B1A296;
 }
