@@ -4,3 +4,19 @@ svg {
   margin: 50px auto;
   fill:#3BA9EE;
 }
+
+img {
+  max-width: 200px;
+}
+
+#bioPage {
+  display: block;
+}
+
+#technologiesPage {
+  display: none;
+}
+
+#projectsPage {
+  display: none;
+}

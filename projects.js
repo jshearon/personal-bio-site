@@ -1,7 +1,8 @@
+
 const projects = [
   {
     title: "Project 1", 
-    screenshot: "http://gotoflashgames.com/files/file/033.jpg", 
+    screenshot: "https://cdn02.nintendo-europe.com/media/images/10_share_images/games_15/virtual_console_nintendo_3ds_7/SI_3DSVC_SuperMarioBros.jpg", 
     description: "This is the best project", // A good project description includes 'the what', 'the why', and 'the how'.
     technologiesUsed: "HTML, CSS, Vanilla JavaScript, Version Control with Github",
     available: true,
@@ -10,7 +11,7 @@ const projects = [
   },
   {
     title: "Project 2", 
-    screenshot: "http://gotoflashgames.com/files/file/033.jpg", 
+    screenshot: "https://cdn02.nintendo-europe.com/media/images/10_share_images/games_15/virtual_console_nintendo_3ds_7/SI_3DSVC_SuperMarioBros.jpg", 
     description: "This is the best project", // A good project description includes 'the what', 'the why', and 'the how'.
     technologiesUsed: "HTML, CSS, Vanilla JavaScript, Version Control with Github",
     available: true,
@@ -19,7 +20,7 @@ const projects = [
   },
   {
     title: "Project 3", 
-    screenshot: "http://gotoflashgames.com/files/file/033.jpg", 
+    screenshot: "https://cdn02.nintendo-europe.com/media/images/10_share_images/games_15/virtual_console_nintendo_3ds_7/SI_3DSVC_SuperMarioBros.jpg", 
     description: "This is the best project", // A good project description includes 'the what', 'the why', and 'the how'.
     technologiesUsed: "HTML, CSS, Vanilla JavaScript, Version Control with Github",
     available: false,
@@ -28,7 +29,7 @@ const projects = [
   },
   {
     title: "Project 4", 
-    screenshot: "http://gotoflashgames.com/files/file/033.jpg", 
+    screenshot: "https://cdn02.nintendo-europe.com/media/images/10_share_images/games_15/virtual_console_nintendo_3ds_7/SI_3DSVC_SuperMarioBros.jpg", 
     description: "This is the best project", // A good project description includes 'the what', 'the why', and 'the how'.
     technologiesUsed: "HTML, CSS, Vanilla JavaScript, Version Control with Github",
     available: true,
@@ -36,31 +37,3 @@ const projects = [
     githubUrl: "https://github.com/nss-evening-cohort-8/js-part-deux"
   }
 ];
-
-const printToDom = (elementId, printString) => {
-  document.querySelector(elementId).innerHTML = printString;
-}
-
-const createProjectCards = (array) => {
-  let domString = '';
-  for (i=0; i < array.length; i++) {
-    if (array[i].available === true) {
-      domString += `<div class="project">
-                    <h2>${array[i].title}</h2>
-                    <p>
-                    ${array[i].description}<br>
-                    ${array[i].technologiesUsed}<br>
-                    <a href="${array[i].url}"><img src="${array[i].screenshot}"></a><br>
-                    <a href="${array[i].githubUrl}">View Repo</a>
-                    </p>
-                    </div>`;
-    }
-  }
-  printToDom('#projectsPage', domString);
-}
-
-const init = () => {
-  createProjectCards(projects);
-}
-
-init();
