@@ -3,17 +3,15 @@ const printToDom = (elementId, printString) => {
 }
 
 const createProjectCards = (array) => {
-  let domString = '<h3>My Projects</h3>';
+  let domString = `<h3 class="pageTitle">My Projects</h3>`;
   for (i=0; i < array.length; i++) {
     if (array[i].available === true) {
       domString += `<div class="project">
-                    <h2>${array[i].title}</h2>
-                    <p>
-                    ${array[i].description}<br>
-                    ${array[i].technologiesUsed}<br>
-                    <a href="${array[i].url}"><img src="${array[i].screenshot}"></a><br>
+                    <h4>${array[i].title}</h4>
+                    <p>${array[i].description}</p>
+                    <a href="${array[i].url}"><img src="${array[i].screenshot}"></a>
+                    <p>${array[i].technologiesUsed}</p>
                     <a href="${array[i].githubUrl}">View Repo</a>
-                    </p>
                     </div>`;
     }
   }
@@ -26,7 +24,11 @@ const showHideDivs = (divClass, clickedId) => {
   for (i = 0; i < divs.length; i++) {
     if (divs[i].id == clickedId) {
       console.log(divs[i].id + clickedId);
-      divs[i].style.display = "block";
+      if (divs[i].id == "projectsPage") {
+        divs[i].style.display = "flex";
+      } else {
+        divs[i].style.display = "block";
+      }
     } else {
       console.log(divs[i].id + clickedId);
       divs[i].style.display = "none";
