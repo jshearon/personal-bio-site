@@ -1,6 +1,6 @@
 # Personal Bio Site
 
-[Project Screen Shot](screen_shot.png)
+![Project Screen Shot](screen_shot.png)
 
 This is a website to show off my accomplishments in and out of class, list the skills I've acquired and talk about my interests. 
 
