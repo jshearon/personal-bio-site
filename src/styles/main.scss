@@ -1,12 +1,20 @@
+html, body {
+  height: 100vh;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  height: 100%;
-  min-height: auto;
+  display: grid;
   font-family: 'Montserrat', sans-serif;
   background-color: #5D5C61;
   color: white;
+  grid-template-columns: 50vw 50vw;
+  grid-template-rows: auto;
+  grid-template-areas: 
+   "nav content"
+   "footer footer";
 }
 
 h1, h4 {
@@ -15,13 +23,12 @@ h1, h4 {
 }
 
 nav {
-  width: 45%;
-  padding: 1em;
-  min-height: 10em;
+  padding: 0;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
+  grid-area: nav;
 }
 
 nav h1 {
@@ -55,20 +62,22 @@ nav img {
 }
 
 #mainContent {
-  width: 45%;
-  padding: 1em;
+  padding: 2em 2em 0 0;
+  grid-area: content;
+  overflow-y: scroll;
 }
 
 footer {
   width: 100%;
-  padding: 1em;
+  padding: 0;
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-evenly;
   align-items: flex-end;
+  grid-area: footer;
 }
 
-svg {
+.pagefooter svg {
   display: block;
   height: 35px;
   margin: 35px auto;
@@ -83,11 +92,20 @@ svg {
   display: none;
 }
 
+#technologiesPage svg {
+  display: block;
+  height: 5rem;
+  margin: 1rem auto;
+}
+
 #projectsPage {
   display: none;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: nowrap;
   justify-content: space-evenly;
 }
+
 
 .pageTitle {
   width: 100%;
