@@ -3,7 +3,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="main.css">
   <link rel="shortcut icon" href="https://www.favicon.cc/logo3d/840289.png" type="image/x-icon">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap" rel="stylesheet">
   <title>Jonathan Shearon - Full Stack Developer</title>
@@ -13,13 +12,13 @@
 
   <!-- Navigation -->
   <nav>
-    <img src="me.jpg" alt="">
+    <img src="./assets/me.jpg" alt="">
     <h1>Jonathan Shearon</h1>
     <h4>Full Stack Developer</h4>
     <ul id="navLinks">
-      <li id="navToBio" data-page-id="bioPage">Bio</li>
-      <li id="navToTechnologies" data-page-id="technologiesPage">Technologies</li>
-      <li id="navToProjects" data-page-id="projectsPage">Projects</li>
+      <li id="navToBio" class="navlink" data-page-id="bioPage">Bio</li>
+      <li id="navToTechnologies" class="navlink" data-page-id="technologiesPage">Technologies</li>
+      <li id="navToProjects" class="navlink" data-page-id="projectsPage">Projects</li>
     </ul>
   </nav>
   <!-- End Navigation -->
@@ -29,22 +28,9 @@
     <div class="fullPage" id="bioPage">
       <!-- TODO: Fill in bio info here: What is your background? Why do you want to go into development? What do you love about development? -->
       <h3>Biography</h3>
-      <p>Proident mollit consectetur ad eu. Pariatur amet commodo irure id officia id exercitation fugiat tempor cupidatat. Mollit quis mollit dolore culpa laboris labore excepteur laborum qui sunt adipisicing.</p>
-      <p>Fugiat incididunt adipisicing amet minim quis reprehenderit incididunt eiusmod labore non cillum quis cupidatat officia. In pariatur excepteur qui in. Laborum velit aliqua anim nisi commodo quis amet qui amet ad ex ex tempor irure. Consequat consequat aliquip ea veniam minim enim laborum irure sit.</p>
-      <p>Enim ipsum ipsum pariatur anim sit laborum. Ex et voluptate sit laborum minim ex excepteur incididunt aute officia anim culpa. Exercitation fugiat ullamco occaecat esse cupidatat elit. Adipisicing labore nisi ullamco sit eu. Aute ad velit reprehenderit ex dolor dolor occaecat eu ullamco exercitation irure occaecat aute. Et exercitation cillum amet cillum quis consequat do cupidatat exercitation mollit. Aliqua aliqua commodo dolore irure non quis deserunt sint excepteur sint ipsum dolor velit.</p>
+      <p>I’ve been a small business entrepreneur for most of my working life, and always enjoyed the challenges it presents. Finding creative ways to please my customers, managing teams from all walks of life and bringing it all together to create a successful business is one of the most rewarding things I’ve ever done. When I took a few months to learn how to code and write a custom CRM for my business, I was instantly in love. Software development is the language of creative problem solving I’d been searching for all along. Now I’m ready to forge a new career as a developer and leverage my business experience with my newly acquired skills.</p>
     </div>
-    <div class="fullPage" id="technologiesPage">
-      <!-- TODO: Start an UL of all of the tools and technologies you've started learning so far. (You'll beef this page up later). -->
-      <h3>Technologies Mastered</h3>
-      <ul>
-        <li>Aute do laboris sit laboris fugiat consectetur aliquip cupidatat culpa aute.</li>
-        <li>Velit anim ut et occaecat mollit fugiat nisi mollit occaecat id id do.</li>
-        <li>Ut in minim amet nostrud reprehenderit pariatur qui.</li>
-        <li>Exercitation veniam aute enim magna anim est.</li>
-        <li>Adipisicing elit commodo nostrud amet duis amet.</li>
-        <li>Non esse velit qui pariatur ipsum minim adipisicing sit ullamco occaecat.</li>
-      </ul>
-    </div>
+    <div class="fullPage" id="technologiesPage"></div>
     <div class="fullPage" id="projectsPage"></div>
   </div>
   <!-- End Primary View -->
@@ -104,11 +90,6 @@
       </a>
   </footer>
   <!-- End Footer -->
-
-  <!-- begin scripts -->
-  <script src="projects.js"></script>
-  <script src="main.js"></script>
-  <!-- end scripts -->
 
 </body>
 </html>
