@@ -1,5 +1,5 @@
-const printToDom = (elementId, printString) => {
-  document.querySelector(elementId).innerHTML = printString;
+const printToDom = (elementId, text) => {
+  document.querySelector(elementId).innerHTML = text;
 };
 
 export default { printToDom };
